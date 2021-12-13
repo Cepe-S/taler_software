@@ -1,0 +1,66 @@
+[
+    {
+        "1": [
+            {
+                "ID": 1,
+                "client": "test",
+                "client_phone": "test",
+                "machine_model": "test",
+                "problems": "test",
+                "status": "arreglada",
+                "workforce": {
+                    "carburaci\u00c3\u00b3n": 1800,
+                    "limpieza": 200,
+                    "false": 0
+                },
+                "spare_parts": {
+                    "juntas": 300,
+                    "false": false
+                },
+                "total_price": 0,
+                "arrive_date": "Sat Nov 20 23:14:39 2021",
+                "fixing_date": ""
+            }
+        ],
+        "102": [
+            {
+                "ID": 102,
+                "client": "Juan",
+                "client_phone": "2236689916",
+                "machine_model": "Honda 4 tiempos",
+                "problems": "No arranca",
+                "status": "en espera",
+                "workforce": {},
+                "spare_parts": {},
+                "total_price": 0,
+                "arrive_date": "Mon Dec 13 02:18:22 2021",
+                "fixing_date": ""
+            }
+        ],
+        "103": [
+            {
+                "ID": 103,
+                "client": "Jose",
+                "client_phone": "223665453",
+                "machine_model": "motosierra china",
+                "problems": "se apaga",
+                "status": "en espera",
+                "workforce": {
+                    "carburacion": 2323,
+                    "false": 0,
+                    "": "",
+                    "limpieza": 435,
+                    "434": 5344,
+                    "343": "343"
+                },
+                "spare_parts": {
+                    "343": "434",
+                    "false": false
+                },
+                "total_price": 0,
+                "arrive_date": "Mon Dec 13 02:48:11 2021",
+                "fixing_date": ""
+            }
+        ]
+    }
+]
