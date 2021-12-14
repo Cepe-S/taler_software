@@ -3,20 +3,19 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>System</title>
+    <title>Index</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/main.css') }}">
     <script src='main.js'></script>
 </head>
 <body>
     <div>
-        <h4>Buscar máquina</h4>
+        <h3>Buscar máquina</h3>
         <form method="post">
             <input type="text" name="machine" placeholder="ID">
             <input type="submit" value="Buscar">
         </form>
         <a href="http://192.168.1.69:5000/addmachine"><p>Agregar máquina</p></a>
     </div>
-
 </body>
 </html>

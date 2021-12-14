@@ -9,63 +9,64 @@
     <script src='main.js'></script>
 </head>
 <body>
+
+        <h2>ID: {{data.ID}}</h2>
+
         <h3>Estado: {{data.status}}</h3>
 
         <h4>Máquina:</h4>
         <p>{{data.machine_model}}</p>
 
-        <h4>Día de entrada</h4>
+
+        <h4>Fecha de entrada</h4>
         <p>{{data.arrive_date}}</p>
-
-        <h4>Problemas:</h4>
-        <p>{{data.problems}}</p>
-        
-        <h4>Mano de obra:</h4>
-        {% for name in data.workforce: %}
-            <li>
-                <td>{{name}}</td>
-                <td>: $</td>
-                <td>{{data.workforce[name]}}</td>
-            </li>
-        {% endfor %}
-
-        <form method="post">
-            <input type="text" name="service" placeholder="Servicio">
-            <input type="number" name="service_price" placeholder="Precio"><br>
-            <input type="submit" value="Agregar">
-
-        <h4>Repuestos:</h4>
-
-        {% for name in data.spare_parts: %}
-            <li>
-                <td>{{name}}</td>
-                <td>: $</td>
-                <td>{{data.spare_parts[name]}}</td>
-            </li>
-        {% endfor %}
-
-        <input type="text" name="spare_part" placeholder="Repuesto">
-        <input type="number" name="spare_part_price" placeholder="Precio"><br>
-        <input type="submit" value="Agregar">
-        
-    </form>
-
-
-
-
-
-        {% if data.status == "en espera" %}
-        {% else %}
-        <h4>Día de arreglo:</h4>
-        <a>{{data.fixing_date}}</a>
-        <h3>Precio total: $ {{data.total_price}}</h3>
-        <button>Entregada</button>
-        {% endif %}
 
         <h4>Cliente:</h4>
         <td>Nombre: {{data.client}}</td><br>
-        <td>Teléfono: {{data.client_phone}}</td><br><br>
+        <td>Teléfono: {{data.client_phone}}</td><br>
 
-        <button>Arreglada</button>
+        <h4>Problemas:</h4>
+        <p>{{data.problems}}</p>
+
+
+        <form method="post">
+
+            <h4>Mano de obra:</h4>
+            {% for name in data.workforce: %}
+                <td>{{name}}: $ {{data.workforce[name]}}</td><br>
+            {% endfor %}
+            <br>
+            {% if data.status == 'en espera': %}
+                <input type="text" name="service" placeholder="Servicio">
+                <input type="number" name="service_price" placeholder="Precio"><br>
+                <input type="submit" value="Agregar">
+            {% endif %}
+            <h4>Repuestos:</h4>
+            {% for name in data.spare_parts: %}
+                <td>{{name}}: $ {{data.spare_parts[name]}}</td><br>
+            {% endfor %}
+            
+            {% if data.status == 'en espera': %}
+                <input type="text" name="spare_part" placeholder="Repuesto">
+                <input type="number" name="spare_part_price" placeholder="Precio"><br>
+                <input type="submit" value="Agregar"><br><br>
+                <input type="submit" name="fixed" placeholder="Arreglada" value="fixed">
+            {% endif %}
+
+
+            {% if data.status == "Para entregar" %}
+            <h4>Fecha de arreglo:</h4>
+            <a>{{data.fixing_date}}</a><br><br>
+            <input type="submit" name="delivered" placeholder="Entregada" value="delivered">
+            <h3>Precio total: $ {{data.total_price}}</h3>
+            {% endif %}
+
+            {% if data.status == "Entregada" %}
+            <h4>Fecha de entrega:</h4>
+            <p>{{data.delivery_date}}</p>
+            <input type="submit" name="New issue" placeholder="Entregada" value="New issue">
+            <h3>Precio total: $ {{data.total_price}}</h3>
+            {% endif %}
+        </form>
 </body>
 </html>
