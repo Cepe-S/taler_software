@@ -42,6 +42,109 @@
                 "total_price": 4800,
                 "arrive_date": "Sat Nov 20 23:14:39 2021",
                 "fixing_date": "Sat Nov 20 23:14:39 2021"
+            },
+            {
+                "ID": "1",
+                "client": "test",
+                "client_phone": "test",
+                "machine_model": "test",
+                "problems": "Gsgsg",
+                "status": "Entregada",
+                "workforce": {},
+                "spare_parts": {},
+                "total_price": 0,
+                "arrive_date": "Tue Dec 14 19:45:16 2021",
+                "fixing_date": "Tue Dec 14 19:45:22 2021",
+                "delivery_date": "Tue Dec 14 19:45:26 2021"
+            }
+        ],
+        "102": [
+            {
+                "ID": 102,
+                "client": "Juan Gui\u00f1az\u00fa",
+                "client_phone": "2235634052",
+                "machine_model": "Motosierra dogo amarilla",
+                "problems": "No gira la espada. Se apaga.",
+                "status": "Para entregar",
+                "workforce": {
+                    "Carburaci\u00f3n": 1800,
+                    "Limpieza": 300
+                },
+                "spare_parts": {
+                    "Juntas": 400
+                },
+                "total_price": 2500,
+                "arrive_date": "Tue Dec 14 17:24:37 2021",
+                "fixing_date": "Tue Dec 14 17:26:03 2021",
+                "deivery_date": ""
+            }
+        ],
+        "103": [
+            {
+                "ID": 103,
+                "client": "Sergio",
+                "client_phone": "0",
+                "machine_model": "Motoguada\u00f1a china",
+                "problems": "Carburador trabado.",
+                "status": "Para entregar",
+                "workforce": {
+                    "Cambio cuerpo carburador": 300
+                },
+                "spare_parts": {
+                    "Cuerpo carburador": 300
+                },
+                "total_price": 600,
+                "arrive_date": "Tue Dec 14 18:37:08 2021",
+                "fixing_date": "Tue Dec 14 18:39:56 2021",
+                "deivery_date": ""
+            }
+        ],
+        "104": [
+            {
+                "ID": 104,
+                "client": "Alberto Crear",
+                "client_phone": "2234494491",
+                "machine_model": "Motosierra echo naranja",
+                "problems": "Parada hace 3 a\u00f1os.",
+                "status": "en espera",
+                "workforce": {},
+                "spare_parts": {},
+                "total_price": 0,
+                "arrive_date": "Tue Dec 14 19:07:41 2021",
+                "fixing_date": "",
+                "deivery_date": ""
+            }
+        ],
+        "105": [
+            {
+                "ID": 105,
+                "client": "?",
+                "client_phone": "?",
+                "machine_model": "M\u00e1quina el\u00e9ctrica china",
+                "problems": "Llave de contacto.",
+                "status": "en espera",
+                "workforce": {},
+                "spare_parts": {},
+                "total_price": 0,
+                "arrive_date": "Tue Dec 14 19:34:20 2021",
+                "fixing_date": "",
+                "deivery_date": ""
+            }
+        ],
+        "106": [
+            {
+                "ID": 106,
+                "client": "Santiago Bilbao",
+                "client_phone": "0",
+                "machine_model": "Desmalezadora Homelite",
+                "problems": "Arrancador. No arranca.",
+                "status": "en espera",
+                "workforce": {},
+                "spare_parts": {},
+                "total_price": 0,
+                "arrive_date": "Tue Dec 14 19:39:27 2021",
+                "fixing_date": "",
+                "deivery_date": ""
             }
         ]
     }

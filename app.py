@@ -16,6 +16,9 @@ os.chdir(os.path.dirname(__file__))
 app = Flask(__name__)
 
 # TODO agregar lista de máquinas para hacer
+# TODO agregar suma de ganancias
+# TODO agregar lista de gastos
+
 
 @app.route('/')
 def index():
