@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Agregar problema</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div>
+        <h1>Agregar problema</h1>
+        <p>ID: {{data.machine_data.ID}}</p>
+        <p>Cliente: {{data.machine_data.client}}</p>
+        <p>Máquina: {{data.machine_data.machine}}</p>
+
+        <h2>Historial</h2>
+        {% for item in data.problems_history: %}
+            <h4>Problema:</h4>
+                <p>{{item.problems}}</p>
+            <h4>Fecha de arreglo:</h4>
+                <p>{{item.fixing_date}}</p>
+            <h4>Arreglos:</h4>
+            {% for service in item.workforce: %}
+                <p>{{service}}</p>
+            {% endfor %}
+            <h4>Repuestos usados:</h4>
+            {% for spare_part in item.spare_parts: %}
+                <p>{{spare_part}}</p>
+            {% endfor %}
+            <p>------------------------</p>
+        {% endfor %}
+        <form method="post">
+            <input type="text" name="problems" placeholder="Nuevos problemas"><br><br>
+            <input type="submit" value="Agregar">
+        </form>
+    </div>
+</body>
+</html>
