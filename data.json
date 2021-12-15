@@ -3,7 +3,7 @@
         "1": {
             "ID": 1,
             "client_ID": 1,
-            "status": "Para entregar",
+            "status": "Entregada",
             "machine_model": "yellow_test",
             "issues": [
                 {
@@ -12,46 +12,35 @@
                         "carburaci\u00c3\u00b3n": 1800,
                         "limpieza": 200,
                         "cambio de pist\u00f3n": 2500,
-                        "false": 0
+                        "d": 5,
+                        "o": 5,
+                        "t": 5
                     },
                     "spare_parts": {
                         "juntas": 300,
                         "false": false
                     },
-                    "total_price": 4800,
+                    "total_price": 4815,
                     "arrive_date": "Sat Nov 20 23:14:39 2021",
-                    "fixing_date": "Sat Nov 20 23:14:39 2021",
-                    "delivery_date": "Tue Dec 14 19:45:26 2021"
-                }
-            ]
-        },
-        "102": {
-            "ID": 102,
-            "client": "Juan Gui\u00f1az\u00fa",
-            "client_phone": "2235634052",
-            "machine_model": "Motosierra dogo amarilla",
-            "status": "Para entregar",
-            "issues": [
+                    "fixing_date": "Wed Dec 15 06:58:20 2021",
+                    "delivery_date": "Wed Dec 15 07:02:28 2021"
+                },
                 {
-                    "problems": "No gira la espada. Se apaga.",
+                    "problems": "problem 5",
                     "workforce": {
-                        "Carburaci\u00f3n": 1800,
-                        "Limpieza": 300
+                        "c": 3
                     },
-                    "spare_parts": {
-                        "Juntas": 400
-                    },
-                    "total_price": 2500,
-                    "arrive_date": "Tue Dec 14 17:24:37 2021",
-                    "fixing_date": "Tue Dec 14 17:26:03 2021",
-                    "deivery_date": ""
+                    "spare_parts": {},
+                    "total_price": 3,
+                    "arrive_date": "Wed Dec 15 07:02:43 2021",
+                    "fixing_date": "Wed Dec 15 07:04:09 2021",
+                    "delivery_date": "Wed Dec 15 07:04:36 2021"
                 }
             ]
         },
         "103": {
             "ID": 103,
-            "client": "Sergio",
-            "client_phone": "0",
+            "client_ID": 102,
             "machine_model": "Motoguada\u00f1a china",
             "status": "Para entregar",
             "issues": [
@@ -71,10 +60,10 @@
             ]
         },
         "104": {
-            "ID": 104,
+            "ID": 103,
             "client_ID": 104,
             "machine_model": "Motosierra echo naranja",
-            "status": "en espera",
+            "status": "Pendiente",
             "issues": [
                 {
                     "problems": "Parada hace 3 a\u00f1os.",
@@ -88,10 +77,10 @@
             ]
         },
         "105": {
-            "ID": 105,
+            "ID": 104,
             "client_ID": 0,
             "machine_model": "M\u00e1quina el\u00e9ctrica china",
-            "status": "en espera",
+            "status": "Pendiente",
             "issues": [
                 {
                     "problems": "Llave de contacto.",
@@ -109,7 +98,7 @@
             "client_ID": 105,
             "machine_model": "Desmalezadora Homelite",
             "problems": "Arrancador. No arranca.",
-            "status": "en espera",
+            "status": "Pendiente",
             "issues": [
                 {
                     "workforce": {},
@@ -120,14 +109,40 @@
                     "deivery_date": ""
                 }
             ]
+        },
+        "107": {
+            "ID": 107,
+            "client_ID": 107,
+            "status": "Pendiente",
+            "machine_model": "blue test",
+            "issues": [
+                {
+                    "problems": "test problem",
+                    "workforce": {},
+                    "spare_parts": {},
+                    "total_price": 0,
+                    "arrive_date": "Wed Dec 15 02:15:04 2021",
+                    "fixing_date": "",
+                    "deivery_date": ""
+                }
+            ]
         }
     },
     {
         "0": {
             "client_ID": 0,
-            "client": 0,
+            "client": "Desconocido",
             "client_phone": 0,
             "machines": []
+        },
+        "1": {
+            "client_ID": 1,
+            "client": "tesst",
+            "client_phone": 0,
+            "machines": [
+                1
+            ],
+            "debt": 0
         },
         "101": {
             "client_ID": 101,
@@ -149,15 +164,27 @@
         },
         "104": {
             "client_ID": 104,
-            "client": "Alberto Crear",
-            "client_phone": "2234494491",
+            "client": "Santiago Bilbao",
+            "client_phone": "0",
             "machines": []
         },
-        "105": {
-            "client_ID": 105,
-            "client": "Santiago Bilbao",
-            "client_phone": "2234494491",
-            "machines": []
+        "107": {
+            "client_ID": 107,
+            "client": "test",
+            "client_phone": 555,
+            "machines": [
+                107
+            ],
+            "debt": 0
         }
+    },
+    {
+        "clients": [
+            "Juan Gui\u00f1az\u00fa",
+            "Alberto Crear",
+            "Santiago Bilbao",
+            "Sergio",
+            "test"
+        ]
     }
 ]
